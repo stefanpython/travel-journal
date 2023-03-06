@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  background-color: #ff5454;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.nav--image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav--title {
+  margin-top: 18px;
+  font-size: 18px;
+}
+
+.app--container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.card--image {
+  width: 200px;
+  height: 270px;
+  border-radius: 15px;
+}
+
+.card--placeholder {
+  width: 20px;
+  height: 20px;
+  margin-left: 13px;
+}
+
+.card--container {
+  display: flex;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  overflow-y: auto;
+  box-shadow: 0px 10px 14px 0px rgba(128, 128, 128, 0.353);
+  margin-bottom: -50px;
+}
+
+.card--top {
+  display: flex;
+  align-items: center;
+}
+
+.card--country {
+  margin-right: 30px;
+}
+
+.card--bottom {
+  margin-left: 15px;
+  margin-top: -25px;
+}
+
+.card--lower {
+  padding: 15px;
+}
+
+.card--place {
+  font-weight: 700;
+  color: rgb(53, 50, 50);
+}
+
+.card--date,
+.card--text {
+  margin-top: -10px;
+  line-height: 1.5em;
+  color: rgb(82, 80, 80);
+}
+
+.card--inner {
+  display: flex;
+  background-color: rgb(242, 236, 236);
+  overflow-y: auto;
+  box-shadow: 0px 1px 14px 0px rgba(128, 128, 128, 0.353);
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 760px) {
+  .app--container {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .card--lower {
+    margin-top: 90%;
+    margin-left: -105%;
+  }
+
+  .card--image {
+    min-width: 100%;
+  }
+}
