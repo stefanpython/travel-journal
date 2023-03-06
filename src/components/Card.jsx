@@ -1,14 +1,10 @@
-import Data from "../Data";
+import React from "react";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card--container">
       <div className="card--inner">
-        <img
-          className="card--image"
-          src="https://images.unsplash.com/photo-1570459027562-4a916cc6113f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80"
-          alt=""
-        />
+        <img className="card--image" src={props.imageUrl} alt="" />
 
         <div className="card--lower">
           <div className="card--top">
@@ -17,22 +13,19 @@ export default function Card() {
               src="./src/images/placeholder.png"
               alt="placeholder"
             />
-            <p className="card--country">Japan</p>
-            <a href="">View on google map</a>
+            <p className="card--country">{props.title}</p>
+            <a href={props.googleMapsUrl}>View on google map</a>
           </div>
 
           <div className="card--bottom">
-            <h1 className="card--place">Mount Fuji</h1>
+            <h1 className="card--place">{props.location}</h1>
 
             <h5 className="card--date">
-              20 September, 2022 - 20 January, 2023
+              <span className="startDate">{props.startDate}</span> -{" "}
+              <span className="endDate">{props.endDate}</span>
             </h5>
 
-            <p className="card--text">
-              Mount Fuji is the tallest mountain in Japan, standing at 3,776
-              meters (12,380 feet). Mount Fuji is the single most popular
-              tourist site in Japan, for both Japanese and foreign tourists.
-            </p>
+            <p className="card--text">{props.description}</p>
           </div>
         </div>
       </div>

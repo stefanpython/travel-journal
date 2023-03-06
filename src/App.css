@@ -39,9 +39,9 @@
   display: flex;
   padding: 50px;
   background-color: rgb(255, 255, 255);
-  overflow-y: auto;
   box-shadow: 0px 10px 14px 0px rgba(128, 128, 128, 0.353);
   margin-bottom: -50px;
+  overflow-y: auto;
 }
 
 .card--top {
