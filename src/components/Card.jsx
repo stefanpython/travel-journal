@@ -10,7 +10,7 @@ export default function Card(props) {
           <div className="card--top">
             <img
               className="card--placeholder"
-              src="./src/images/placeholder.png"
+              src="images/placeholder.png"
               alt="placeholder"
             />
             <p className="card--country">{props.title}</p>
